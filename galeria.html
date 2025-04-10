@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Proyecto WAM-E</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍃</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">WAM-E</div>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="galeria.html" class="active">Galería</a>
+            <a href="equipo.html">Equipo</a>
+            <a href="proyecto.html">Detalles</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1 class="page-title animate__animated animate__fadeIn">Galería de Imágenes</h1>
+        
+        <section class="innovation-section animate__animated animate__fadeInUp">
+            <h2>Innovación, Calidad y Equipo</h2>
+            <div class="button-container">
+                <button class="info-button" onclick="showInfo('innovation')">Innovación</button>
+                <button class="info-button" onclick="showInfo('quality')">Calidad</button>
+                <button class="info-button" onclick="showInfo('team')">Equipo</button>
+            </div>
+            <div id="info-display" class="info-content"></div>
+        </section>
+
+        <div class="gallery animate__animated animate__fadeInUp">
+            <div class="gallery-item">
+                <img src="Imagen de WhatsApp 2025-04-01 a las 21.42.45_b0dde45c.jpg" alt="Imagen del proyecto 1">
+                <div class="gallery-caption">Vista del proyecto WAM-E</div>
+            </div>
+            <div class="gallery-item">
+                <img src="Imagen de WhatsApp 2025-04-07 a las 09.33.30_1402002b.jpg" alt="Imagen del proyecto 2">
+                <div class="gallery-caption">Desarrollo del proyecto</div>
+            </div>
+            <div class="gallery-item">
+                <img src="Imagen de WhatsApp 2025-04-07 a las 09.33.30_740dd524.jpg" alt="Imagen del proyecto 3">
+                <div class="gallery-caption">Avances del proyecto</div>
+            </div>
+            <div class="gallery-item">
+                <img src="Imagen de WhatsApp 2025-04-07 a las 09.33.31_5550199a.jpg" alt="Imagen del proyecto 4">
+                <div class="gallery-caption">Detalles del proyecto</div>
+            </div>
+            <div class="gallery-item video-item">
+                <video controls>
+                    <source src="Video de WhatsApp 2025-04-10 a las 09.44.11_391cab61.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+                <div class="gallery-caption">Video demostrativo del proyecto</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Nuestro Proyecto. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
